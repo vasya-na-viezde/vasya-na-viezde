@@ -90,6 +90,13 @@ details.card .more{padding:0 18px 18px;border-top:1px solid var(--line);padding-
 .sugg div:last-child{border-bottom:0}
 .addrnote{font-size:12.5px;color:#9aa5b4;margin-top:5px}
 .price span{margin-top:4px}
+
+.car{background:#121821;border:1px solid #2c3646;border-radius:14px;padding:12px;margin-bottom:10px}
+.carhead{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;font-weight:700}
+.rm{background:none;border:0;color:#ff8a8a;font-size:13px;cursor:pointer;font-family:inherit}
+.car input,.car select{margin-bottom:8px}
+.btn.add{background:transparent;border:1.5px dashed #ffa05c;color:#ffa05c;width:100%;margin:0 0 8px}
+.promo{font-size:13px;color:#ffa05c;margin-bottom:14px}
 </style>
 </head>
 <body>
@@ -109,11 +116,11 @@ details.card .more{padding:0 18px 18px;border-top:1px solid var(--line);padding-
 
 <section id="services"><div class="wrap">
 <h2>Услуги на выезде</h2>
-<p class="sub">Работаем с легковыми и грузовыми автомобилями, любые диаметры колёс. Сроки ориентировочные, зависят от марки и состояния авто.</p>
+<p class="sub">Работаем с легковыми и грузовыми автомобилями, любые диаметры колёс. Сроки ориентировочные. К услугам добавляется выезд: 2 500 ₽ в пределах МКАД, за МКАД +70 ₽ за км.</p>
 <div class="grid">
-<details class="card"><summary><span class="ic">🛞</span><h3>Шиномонтаж легковых и грузовых автомобилей</h3><span class="chev" aria-hidden="true"></span></summary><div class="more"><p>Сезонная смена колёс и работа с шинами на месте.</p><ul><li>Снятие и установка колёс</li><li>Перебортировка и балансировка</li><li>Ремонт проколов и порезов</li><li>Любые диаметры колёс</li></ul><a class="go" href="#order">Заказать →</a></div></details>
+<details class="card"><summary><span class="ic">🛞</span><h3>Шиномонтаж легковых и грузовых автомобилей</h3><span class="chev" aria-hidden="true"></span></summary><div class="more"><p>Сезонная смена колёс и работа с шинами на месте.</p><ul><li>Снятие и установка колёс</li><li>Перебортировка и балансировка</li><li>Ремонт прокола: от 3 000 ₽ + выезд</li><li>Ремонт пореза: от 4 500 ₽ + выезд</li><li>Установка запасного колеса: 2 500 ₽ + выезд</li><li>Любые диаметры колёс</li></ul><a class="go" href="#order">Заказать →</a></div></details>
 <details class="card"><summary><span class="ic">❄️</span><h3>Заправка кондиционеров</h3><span class="chev" aria-hidden="true"></span></summary><div class="more"><p>Заправим кондиционер у вашего дома или офиса.</p><a class="go" href="#order">Заказать →</a></div></details>
-<details class="card"><summary><span class="ic">⛽</span><h3>Подвоз топлива</h3><span class="chev" aria-hidden="true"></span></summary><div class="more"><p>Привезём топливо туда, где остановилась машина.</p><a class="go" href="#order">Заказать →</a></div></details>
+<details class="card"><summary><span class="ic">⛽</span><h3>Подвоз топлива</h3><span class="chev" aria-hidden="true"></span></summary><div class="more"><p>Привезём топливо туда, где остановилась машина.</p><ul><li>5 000 ₽ в пределах МКАД, за МКАД +100 ₽ за км</li><li>АИ-92 или АИ-95, топливо оплачивается по чеку</li></ul><a class="go" href="#order">Заказать →</a></div></details>
 <details class="card"><summary><span class="ic">🔧</span><h3>Мелкий ремонт</h3><span class="chev" aria-hidden="true"></span></summary><div class="more"><p>Обслуживание и небольшой ремонт прямо на месте.</p><ul><li>Замена масла и масляного фильтра</li><li>Замена колодок</li><li>Замена и установка ремней: приводного и ГРМ</li><li>Лампы, щётки, фильтры</li><li>Аккумулятор, свечи</li><li>Запуск двигателя («прикурить»)</li><li>Масло и запчасти привезём при необходимости</li></ul><span class="time">Масло — ориентировочно 30–45 мин, колодки — 45–90 мин</span><a class="go" href="#order">Заказать →</a></div></details>
 </div>
 </div></section>
@@ -136,7 +143,7 @@ details.card .more{padding:0 18px 18px;border-top:1px solid var(--line);padding-
 <div>Понятная цена до начала работ</div>
 <div>Аккуратно работаем с колёсами и крепежом</div>
 <div>Помогаем подобрать масло и расходники</div>
-<div>Работаем круглосуточно, без выходных</div><div>Оплата: наличные, безналичный расчёт, оплата по счёту</div>
+<div>Работаем круглосуточно, без выходных</div><div>3 и более авто в пределах МКАД: выезд бесплатно</div><div>Оплата: наличные, безналичный расчёт, оплата по счёту</div>
 </div>
 </div></section>
 
@@ -147,20 +154,9 @@ details.card .more{padding:0 18px 18px;border-top:1px solid var(--line);padding-
 <section id="order"><div class="wrap">
 <div class="form">
 <h2>Рассчитать цену и оставить заявку</h2>
-<p>Выберите услугу и размер колёс. Вы увидите ориентировочную цену и отправите готовую заявку в чат.</p>
-<div class="fl"><label for="svc">Услуга</label>
-<select id="svc"><option>Шиномонтаж легковой</option><option>Шиномонтаж грузовой</option><option>Заправка кондиционера</option><option>Подвоз топлива</option><option>Мелкий ремонт</option><option>Другое</option></select></div>
-<div id="tire">
-<div class="fields two">
-<div class="fl"><label for="kind">Колёса</label><select id="kind"><option value="rim">На дисках (замена колёс в сборе)</option><option value="norim">Без дисков (снятие и установка шин)</option></select></div>
-<div class="fl"><label for="rad">Радиус</label><select id="rad"></select></div>
-</div>
-<div class="fields two">
-<div class="fl"><label for="prof">Тип шин</label><select id="prof"></select></div>
-<div class="fl"><label for="qty">Сколько колёс</label><select id="qty"><option value="4">4 (комплект)</option><option value="3">3</option><option value="2">2</option><option value="1">1</option></select></div>
-</div>
-</div>
-<div class="fl"><label for="car">Авто</label><input id="car" placeholder="Марка и модель" autocomplete="off"></div>
+<p>Добавьте автомобили и выберите услугу для каждого. Вы увидите ориентировочную цену и отправите готовую заявку в чат.</p>
+<div id="cars"></div><button class="btn add" type="button" id="addcar">+ Добавить авто</button>
+<div class="promo">3 и более авто: выезд бесплатно (в пределах МКАД)</div>
 <div class="fl rel"><label for="addr">Адрес (Москва и Московская область)</label><input id="addr" placeholder="Начните вводить: город, улица, дом" autocomplete="off"><div class="sugg" id="sugg"></div><div class="addrnote" id="addrnote">Выберите адрес из подсказок, и мы посчитаем стоимость выезда.</div></div>
 <div class="price" id="price" aria-live="polite"></div>
 <div class="btns"><button class="btn main" type="button" id="wa">Отправить в WhatsApp</button><button class="btn alt" type="button" id="tg">Отправить в Telegram</button></div>
@@ -176,24 +172,20 @@ var MK=[[37.842762,55.774558],[37.842789,55.76522],[37.842627,55.755723],[37.841
 var R=['R12–15','R16','R17','R18','R19','R20','R21','R22','R23','R24'];
 var P={
 norim:{
-'Обычная':[3200,3680,4160,4800,5440,6240,7040,8000,9440,12860],
+'Обычные':[3200,3680,4160,4800,5440,6240,7040,8000,9440,12860],
 'Кроссовер или низкий профиль':[3520,4160,4960,5600,6400,7360,8480,9760,11200,14240],
 'Кроссовер и низкий профиль':[4220,4990,5950,6720,7680,8800,10170,11700,13440,17100],
 'Runflat':[4160,4780,5400,6240,7080,8110,9150,10400,12270,16700],
-'Кроссовер или низкий профиль + Runflat':[4800,5520,6240,7200,8160,9360,10560,12000,14160,19290],
-'Кроссовер и низкий профиль + Runflat':[5440,6250,7100,8160,9240,10610,11900,13600,16050,21860]},
+'Низкий профиль или кроссовер Runflat':[4800,5520,6240,7200,8160,9360,10560,12000,14160,19290],
+'Низкий профиль и кроссовер Runflat':[5440,6250,7100,8160,9240,10610,11900,13600,16050,21860]},
 rim:{
-'Обычная':[2600,2800,3000,3400,3800,4900,6800,8900,9500,9900],
+'Обычные':[2600,2800,3000,3400,3800,4900,6800,8900,9500,9900],
 'Кроссовер':[3120,3360,3600,4080,4560,5880,8160,10680,11400,11880]}};
 var BASE=2500,PERKM=70,STEP=50;
 function up(n){return Math.ceil(n/STEP)*STEP}
 function $(i){return document.getElementById(i)}
 function fmt(n){return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,'\u00a0')}
 function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
-function fillRad(){var h='';for(var i=0;i<R.length;i++){h+='<option value="'+i+'">'+R[i]+'</option>'}$('rad').innerHTML=h}
-function fillProf(){var k=$('kind').value,cur=$('prof').value,h='',n=Object.keys(P[k]);
-for(var i=0;i<n.length;i++){h+='<option'+(n[i]===cur?' selected':'')+'>'+n[i]+'</option>'}$('prof').innerHTML=h}
-
 /* ---------- геометрия МКАД ---------- */
 function inMkad(x,y){var c=false;for(var i=0,j=MK.length-1;i<MK.length;j=i++){
 var xi=MK[i][0],yi=MK[i][1],xj=MK[j][0],yj=MK[j][1];
@@ -227,43 +219,88 @@ if(id!==calcId)return;
 deliv={inside:false,km:r.km,approx:!!r.approx,price:up(BASE+PERKM*r.km)};render()});
 }
 
-function delivLine(){
-if(!deliv)return'';
-if(deliv.inside)return'Выезд: '+fmt(deliv.price)+' ₽ (в пределах МКАД)';
-return'Выезд: '+fmt(deliv.price)+' ₽ (за МКАД'+(deliv.approx?' примерно ':' ')+deliv.km+' км, '+PERKM+' ₽ за км)';
-}
-function tireNum(){var set=P[$('kind').value][$('prof').value][+$('rad').value],q=+$('qty').value;return up(set*q/4)}
-function tireLine(){var q=+$('qty').value;return'Шиномонтаж: от '+fmt(tireNum())+' ₽ ('+(q===4?'комплект, 4 колеса':q+' '+(q===1?'колесо':'колеса'))+')'}
-
+function newCar(){return{name:'',svc:'Шиномонтаж легковой',kind:'rim',prof:'Обычные',rad:2,qty:4,rtype:'Обычные',fuel:'АИ-92'}}
+var RT=['Обычные','Кроссовер','Низкий профиль','Runflat'],FU=['АИ-92','АИ-95'];
+var cars=[newCar()];
+var SV=['Шиномонтаж легковой','Шиномонтаж грузовой','Ремонт прокола','Ремонт пореза','Установка запасного колеса','Подвоз топлива','Заправка кондиционера','Мелкий ремонт','Другое'];
+function opts(list,cur,vals){return list.map(function(t,i){var v=vals?vals[i]:t;return'<option value="'+esc(v)+'"'+(String(v)===String(cur)?' selected':'')+'>'+esc(t)+'</option>'}).join('')}
+function fld(cls,lab,h){return'<div class="fl"><label>'+lab+'</label><select class="'+cls+'">'+h+'</select></div>'}
+function qtyO(c,tire){return opts(tire?['4 (комплект)','3','2','1']:['4','3','2','1'],c.qty,[4,3,2,1])}
+function carHtml(c,i){
+var tire=c.svc==='Шиномонтаж легковой',pq=(c.svc==='Ремонт прокола'||c.svc==='Ремонт пореза');
+var h='<div class="car" data-i="'+i+'"><div class="carhead"><span>Авто '+(i+1)+'</span>'+(cars.length>1?'<button type="button" class="rm">Удалить</button>':'')+'</div>';
+h+='<input class="cname" placeholder="Марка и модель" autocomplete="off" value="'+esc(c.name)+'">'+fld('csvc','Услуга',opts(SV,c.svc));
+if(tire){
+h+='<div class="fields two">'+fld('ckind','Колёса',opts(['На дисках (замена колёс в сборе)','Без дисков (снятие и установка шин)'],c.kind,['rim','norim']))+fld('crad','Радиус',opts(R,c.rad,R.map(function(_,k){return k})))+'</div>';
+h+='<div class="fields two">'+fld('cprof','Тип шин',opts(Object.keys(P[c.kind]),c.prof))+fld('cqty','Сколько колёс',qtyO(c,1))+'</div>';
+}else if(pq){h+='<div class="fields two">'+fld('crad','Радиус',opts(R,c.rad,R.map(function(_,k){return k})))+fld('crtype','Тип шин',opts(RT,c.rtype))+'</div>'+fld('cqty','Сколько колёс',qtyO(c,0))}
+else if(c.svc==='Подвоз топлива'){h+=fld('cfuel','Топливо',opts(FU,c.fuel))}
+return h+'</div>'}
+function drawCars(){$('cars').innerHTML=cars.map(carHtml).join('')}
+function carPrice(c){var s=c.svc;
+if(s==='Шиномонтаж легковой')return{n:up(P[c.kind][c.prof][c.rad]*c.qty/4),from:1};
+if(s==='Ремонт прокола')return{n:3000*c.qty,from:1};
+if(s==='Ремонт пореза')return{n:4500*c.qty,from:1};
+if(s==='Установка запасного колеса')return{n:2500};
+if(s==='Подвоз топлива')return{fuel:1};
+return{ask:1}}
+function carDesc(c){var s=c.svc;
+if(s==='Шиномонтаж легковой')return s+' ('+(c.kind==='rim'?'на дисках':'без дисков')+', '+c.prof+', '+R[c.rad]+', колёс: '+c.qty+')';
+if(s==='Ремонт прокола'||s==='Ремонт пореза')return s+' ('+R[c.rad]+', '+c.rtype+', колёс: '+c.qty+')';
+if(s==='Подвоз топлива')return s+' ('+c.fuel+')';
+return s}
+function calcOrder(){
+var o={sum:0,lines:[],ask:0,fuel:0,other:0};
+cars.forEach(function(c,i){var p=carPrice(c),nm='Авто '+(i+1)+(c.name?' ('+c.name+')':''),d=carDesc(c);
+if(p.n!=null){o.sum+=p.n;o.other++;o.lines.push(nm+': '+d+' — '+(p.from?'от ':'')+fmt(p.n)+' ₽')}
+else if(p.fuel){o.fuel++;o.lines.push(nm+': '+d)}
+else{o.ask++;o.other++;o.lines.push(nm+': '+d+' — цену назовём')}});
+var out=deliv&&!deliv.inside;
+o.fuelPrice=o.fuel?(out?5000+100*deliv.km:5000):0;
+o.free=!!(deliv&&deliv.inside&&cars.length>=3);
+o.visit=(o.other&&deliv)?(o.free?0:deliv.price):0;
+o.total=o.sum+o.visit+o.fuelPrice;
+o.fuelLine=!o.fuel?'':(deliv?'Подвоз топлива: '+fmt(o.fuelPrice)+' ₽ (выезд включён'+(out?', за МКАД '+deliv.km+' км × 100 ₽':'')+') + топливо по чеку':'Подвоз топлива: 5 000 ₽ в пределах МКАД, за МКАД +100 ₽ за км (выезд включён) + топливо по чеку');
+o.visitLine=(!o.other||!deliv)?'':(o.free?'Выезд: бесплатно (3 и более авто в пределах МКАД)':'Выезд: '+fmt(o.visit)+' ₽'+(deliv.inside?' (в пределах МКАД)':' (за МКАД'+(deliv.approx?' примерно ':' ')+deliv.km+' км, '+PERKM+' ₽ за км)'));
+return o}
 function render(){
-var s=$('svc').value,tire=(s==='Шиномонтаж легковой'),box=$('price'),note=$('addrnote');
-$('tire').style.display=tire?'block':'none';
-var h='';
+var o=calcOrder(),box=$('price'),note=$('addrnote'),h='';
 if(sel&&deliv){note.textContent=deliv.inside?'Адрес в пределах МКАД.':'Адрес за МКАД, расстояние считаем по дороге от ближайшей точки МКАД.'+(deliv.approx?' Не удалось построить маршрут, расстояние оценочное.':'')}
 else if(!sel){note.textContent='Выберите адрес из подсказок, и мы посчитаем стоимость выезда.'}
-if(tire){
-if(deliv){h='<b>Итого ориентировочно: от '+fmt(tireNum()+deliv.price)+' ₽</b><span>'+esc(tireLine())+'</span><span>'+esc(delivLine())+'</span>'}
-else{h='<b>'+esc(tireLine())+'</b><span>Выезд: '+fmt(BASE)+' ₽ в пределах МКАД, за МКАД +'+PERKM+' ₽ за км. Укажите адрес, и мы посчитаем точнее.</span>'}
-}else{
-if(deliv){h='<b>'+esc(delivLine())+'</b><span>Стоимость услуги назовём после уточнения деталей.</span>'}
-else{h='<b>Цену назовём после уточнения деталей</b><span>Выезд: '+fmt(BASE)+' ₽ в пределах МКАД, за МКАД +'+PERKM+' ₽ за км. Укажите адрес, и мы посчитаем выезд.</span>'}
+var rows=o.lines.concat(o.fuelLine?[o.fuelLine]:[],o.visitLine?[o.visitLine]:[]).map(function(l){return'<span>'+esc(l)+'</span>'}).join('');
+if(o.other&&!deliv)rows+='<span>Выезд: '+fmt(BASE)+' ₽ в пределах МКАД (бесплатно при 3 и более авто), за МКАД +'+PERKM+' ₽ за км. Укажите адрес, и мы посчитаем.</span>';
+if(o.other&&deliv&&deliv.inside&&cars.length===2)rows+='<span>Добавьте ещё 1 авто, и выезд будет бесплатным.</span>';
+if(o.fuel)rows+='<span>Топливо оплачивается по чеку.</span>';
+if(o.ask)rows+='<span>Цену остальных услуг назовём после уточнения деталей.</span>';
+var head;
+if(o.sum+o.fuelPrice+o.fuel===0)head='Цену назовём после уточнения деталей';
+else if(o.other&&!deliv)head='Услуги: от '+fmt(o.sum+o.fuelPrice)+' ₽ + выезд';
+else head='Итого ориентировочно: от '+fmt(o.total)+' ₽';
+box.innerHTML='<b>'+head+'</b>'+rows;
 }
-box.innerHTML=h;
-}
-
 function msg(){
-var s=$('svc').value,t='Здравствуйте! Заявка с сайта.\nУслуга: '+s;
-if(s==='Шиномонтаж легковой'){
-t+='\nКолёса: '+($('kind').value==='rim'?'на дисках':'без дисков')+'\nТип шин: '+$('prof').value+'\nРадиус: '+R[+$('rad').value]+'\nКоличество колёс: '+$('qty').value;
-}
-var c=$('car').value.trim(),a=$('addr').value.trim();
-if(c)t+='\nАвто: '+c;
+var o=calcOrder(),t='Здравствуйте! Заявка с сайта.\n'+o.lines.join('\n');
+if(o.fuelLine)t+='\n'+o.fuelLine;
+var a=$('addr').value.trim();
 if(a)t+='\nАдрес: '+a;
 if(sel)t+='\nКарта: https://yandex.ru/maps/?pt='+sel.lon.toFixed(6)+','+sel.lat.toFixed(6)+'&z=17&l=map';
-if(deliv)t+='\n'+delivLine();
-if(s==='Шиномонтаж легковой'){t+='\n'+tireLine();if(deliv)t+='\nИтого ориентировочно: от '+fmt(tireNum()+deliv.price)+' ₽'}
-return encodeURIComponent(t);
-}
+if(o.visitLine)t+='\n'+o.visitLine;
+if(o.other&&!deliv)t+='\nУслуги: от '+fmt(o.sum+o.fuelPrice)+' ₽ (выезд уточним)';
+else if(o.total)t+='\nИтого ориентировочно: от '+fmt(o.total)+' ₽';
+return encodeURIComponent(t)}
+$('cars').addEventListener('input',function(e){var el=e.target,card=el.closest('.car');
+if(card&&el.className==='cname'){cars[+card.dataset.i].name=el.value;render()}});
+$('cars').addEventListener('change',function(e){
+var el=e.target,card=el.closest('.car');if(!card)return;
+var c=cars[+card.dataset.i],k=el.className,v=el.value;
+if(k==='csvc')c.svc=v;
+else if(k==='ckind'){c.kind=v;if(!P[v][c.prof])c.prof=Object.keys(P[v])[0]}
+else if(k==='crad')c.rad=+v;else if(k==='cprof')c.prof=v;else if(k==='cqty')c.qty=+v;else if(k==='crtype')c.rtype=v;else if(k==='cfuel')c.fuel=v;
+if(k==='csvc'||k==='ckind')drawCars();
+render()});
+$('cars').addEventListener('click',function(e){
+if(e.target.className==='rm'){cars.splice(+e.target.closest('.car').dataset.i,1);drawCars();render()}});
+$('addcar').addEventListener('click',function(){cars.push(newCar());drawCars();render()});
 
 /* ---------- подсказки адреса ---------- */
 var sTimer=null,sId=0;
@@ -307,10 +344,10 @@ sel={lon:it.lon,lat:it.lat,label:it.label};$('addr').value=it.label;hideSugg();c
 });
 document.addEventListener('click',function(e){if(!e.target.closest||!e.target.closest('.rel'))hideSugg()});
 
-['svc','kind','rad','prof','qty'].forEach(function(i){$(i).addEventListener('change',function(){if(i==='kind')fillProf();render()})});
+
 $('wa').addEventListener('click',function(){window.open('https://wa.me/79534131409?text='+msg(),'_blank')});
 $('tg').addEventListener('click',function(){window.open('https://t.me/vasily5798?text='+msg(),'_blank')});
-fillRad();$('rad').value='2';fillProf();render();
+drawCars();render();
 </script>
 </body>
 </html>
